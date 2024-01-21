@@ -15,6 +15,7 @@ struct ContentView: View {
                     .font(Font.system(size: 40))
                 Spacer()
             }
+            .padding()
             
             // Image of player
             
@@ -28,7 +29,7 @@ struct ContentView: View {
                             Text("Country:")
                             Text("........")
                         }
-                        
+                        Spacer()
                         // tennis Logo
                         
                         VStack {
@@ -36,12 +37,36 @@ struct ContentView: View {
                             Text("........")
                         }
                         
+                        
                     }
+                    .padding()
                     
                 }
+                .padding(.vertical)
+                Spacer()
+            
+            HStack{
+                Text("Wins:")
+                Text(".....")
+                Spacer()
+            }
+            .padding(.horizontal)
+            
+            Rectangle()
+                .fill(.gray)
+                .frame(height: 30)
+            
+                .padding(.bottom)
+            
+            Rectangle()
+                .fill(.purple)
+                .ignoresSafeArea()
+                .frame(height: 70)
+            
+        
+            
             
         }
-        .padding()
     }
 }
 
